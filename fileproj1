@@ -3,10 +3,20 @@ WebDriver driver=new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		driver.get("https://demo.actitime.com/login.do");
+<<<<<<< HEAD
 		
 		WebElement element=driver.findElement(By.xpath("//div[text()=\"Login \"]"));
 		
 		Actions actions=new Actions(driver);
 		//actions.contextClick();
 	    actions.contextClick(element);
+=======
+			Actions actions=new Actions(driver);
+		actions.moveByOffset(500, 150).contextClick();
+>>>>>>> branch 'main' of https://github.com/Venkatesh-Kolluri/Practise1.git
 		actions.perform();
+		
+		Close();
+		
+		driver.manage.navigate;
+		driver.manage().implicit();
