@@ -3,3 +3,6 @@ WebDriver driver=new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		driver.get("https://demo.actitime.com/login.do");
+			Actions actions=new Actions(driver);
+		actions.moveByOffset(500, 150).contextClick();
+		actions.perform();
